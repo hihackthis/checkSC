@@ -21,7 +21,7 @@ So enter your code number SC:
 
 The default browser open a new window with de code number:
 
-![](https://github.com/hihackthis/checkSC/blob/main/img/sc0.png)
+![](https://github.com/hihackthis/checkSC/blob/main/img/sc02.png)
 
 To search again just close the browser and in the hit your code number:
 
