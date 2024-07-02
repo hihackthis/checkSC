@@ -19,14 +19,14 @@ So enter your code number SC:
 
 ![](https://github.com/hihackthis/checkSC/blob/main/img/sc01.png)
 
-The default browser open a new window with de code number:
+The default browser open a new window with code number:
 
 ![](https://github.com/hihackthis/checkSC/blob/main/img/sc02.png)
 
-To search again just close the browser and in the hit your code number:
+To search again just close the browser and hit your code number:
 
 ![](https://github.com/hihackthis/checkSC/blob/main/img/sc03.png)
 
-If the code number doesn't exist, the checkSC will warn you. Finally, to exit program just press ENTER.
+If the code number doesn't exist, the checkSC will warn you. Finally, to exit the program press ENTER.
 
 ![](https://github.com/hihackthis/checkSC/blob/main/img/sc04.png)
