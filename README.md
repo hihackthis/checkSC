@@ -19,11 +19,11 @@ So enter your code number SC:
 
 ![](https://github.com/hihackthis/checkSC/blob/main/img/sc01.png)
 
-The default browser open a new window with code number:
+The default browser opens a new window with the code number:
 
 ![](https://github.com/hihackthis/checkSC/blob/main/img/sc02.png)
 
-To search again just close the browser and hit your code number:
+To search again close the browser and hit your code number:
 
 ![](https://github.com/hihackthis/checkSC/blob/main/img/sc03.png)
 
