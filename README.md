@@ -23,7 +23,7 @@ The default browser opens a new window with the code number:
 
 ![](https://github.com/hihackthis/checkSC/blob/main/img/sc02.png)
 
-To search again close the browser and hit your code number:
+To search again close the browser and hit 'Y' or 'y' and enter your code number:
 
 ![](https://github.com/hihackthis/checkSC/blob/main/img/sc03.png)
 
