@@ -35,7 +35,7 @@ BinarySearch(link_href, x)
 
 # Search infinite loop
 while True:
-    ch = input("\nNew research? Press Y/y, if no, press ENTER: ")
+    ch = input("\nNew search? Press Y/y, if no, press ENTER: ")
     if ch == 'Y' or ch == 'y':
         x = input('\nEnter with the code (SCXXXX): ')
         BinarySearch(link_href, x)
