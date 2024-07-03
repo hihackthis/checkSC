@@ -1,3 +1,15 @@
+#!/usr/bin/env python3
+
+# This program does a search by SC code number 
+# on ShellCheck Wiki Page.
+#
+# by Diego Moicano (@hihackthis)
+# July 02st, 2024
+# version 1.0
+#
+# Run:
+# python checkSC.py
+#
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import webbrowser
@@ -6,8 +18,8 @@ import webbrowser
 url = urlopen('https://www.shellcheck.net/wiki/')
 bs = BeautifulSoup(url.read(), 'html.parser')
 
-# Search function ShellCheck code number
-def BinarySearch(lst, x):
+# Binary search function ShellCheck code number
+def BinaryShell(lst, x):
     ini = 0
     end = len(lst) - 1
     flag = False
@@ -24,16 +36,16 @@ def BinarySearch(lst, x):
         fullUrl = urlSC + x
         webbrowser.open_new(fullUrl)
     else:
-        print("\nKey is not found")
+        print("\nCode number is not found")
 
-# List all the ShellCheck code number
+# Puts all ShellCheck (SC) code numbers in a list
 link_href = [ x.get("href") for x in bs.select('a[href^="SC"]') ]
 
 # User input ShellCheck code number
 x = input('\nEnter with the code (SCXXXX): ')
-BinarySearch(link_href, x)
+BinaryShell(link_href, x)
 
-# Search infinite loop
+# Search with infinite loop
 while True:
     ch = input("\nNew search? Press Y/y, if no, press ENTER: ")
     if ch == 'Y' or ch == 'y':
