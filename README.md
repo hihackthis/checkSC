@@ -1,5 +1,5 @@
 # checkSC
-Fast search for the code number on the [ShellCheck Wiki](https://www.shellcheck.net/wiki) page.
+Fast search for the code number on the [ShellCheck Wiki](https://www.shellcheck.net/wiki) page. :flashlight:
 
 ## Usage
 ```
@@ -34,4 +34,4 @@ If the code number doesn't exist, the checkSC will warn you. Finally, to exit th
 
 ## Final words 
 
-Have fun! :money_mouth_face:
+Have fun! :sunglasses:
