@@ -1,0 +1,3 @@
+urlopen
+BeautifulSoup
+webbrowser

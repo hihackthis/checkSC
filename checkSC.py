@@ -50,7 +50,7 @@ while True:
     ch = input("\nNew search? Press Y/y, if no, press ENTER: ")
     if ch == 'Y' or ch == 'y':
         x = input('\nEnter with the code (SCXXXX): ')
-        BinarySearch(link_href, x)
+        BinaryShell(link_href, x)
     elif ch == "":
         print("\nBye!")
         break
