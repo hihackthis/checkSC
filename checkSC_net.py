@@ -14,6 +14,11 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import webbrowser
 
+# Font colors
+WHITE = '\033[97m'
+BACKGROUND_RED = '\033[41m'
+RESET = '\033[0m'
+
 # Binary search function ShellCheck code number
 def BinaryShell(lst, x):
     ini = 0
@@ -32,28 +37,28 @@ def BinaryShell(lst, x):
         fullUrl = urlSC + x
         webbrowser.open_new(fullUrl)
     else:
-        print("\nCode number is not found")
+        print('\n', BACKGROUND_RED + WHITE + 'Code number is not found' + RESET)
         
 # Fetch ShellCheck Wiki
 url = urlopen('https://www.shellcheck.net/wiki/')
 bs = BeautifulSoup(url.read(), 'html.parser')
 
 # Puts all ShellCheck (SC) code numbers in a list
-link_href = [ x.get("href") for x in bs.select('a[href^="SC"]') ]
+link_href = [ x.get('href') for x in bs.select('ul li a[href^="SC"]') ]
 
 # User input ShellCheck code number
-x = input('\nEnter with the code (SCXXXX): ')
+x = input('\nEnter with the code (SCXXXX): ').upper()
 BinaryShell(link_href, x)
 
 # Search with infinite loop
 while True:
-    ch = input("\nNew search? Press Y/y, if no, press ENTER: ")
-    if ch == 'Y' or ch == 'y':
-        x = input('\nEnter with the code (SCXXXX): ')
+    ch = input('\nNew search? Press Y/y, if no, press ENTER: ').upper()
+    if ch == 'Y':
+        x = input('\nEnter with the code (SCXXXX): ').upper()
         BinaryShell(link_href, x)
     elif ch == "":
-        print("\nBye!")
+        print('\nBye!')
         break
     else:
-        print("\nChoose the correct option")
+        print('\nChoose the correct option')
 

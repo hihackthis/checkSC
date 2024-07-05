@@ -1,6 +1,8 @@
 # checkSC
 Fast search for the code number on the **ShellCheck Wiki** pages. :flashlight:
 
+[ShellCheck](https://github.com/koalaman/shellcheck) is a tool that provides warnings and suggestions for bash/sh shell scripts, as a way to search Wiki pages quickly, I wrote this program to make debugging more agile and efficient.
+
 Note, there are two checkSC.py:
 
 > checkSC_net.py, this will perform a search on the [ShellCheck Wiki](https://www.shellcheck.net/wiki) website.

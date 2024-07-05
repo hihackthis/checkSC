@@ -15,6 +15,11 @@ from bs4 import BeautifulSoup
 import webbrowser
 import re
 
+# Font colors
+WHITE = '\033[97m'
+BACKGROUND_RED = '\033[41m'
+RESET = '\033[0m'
+
 # Binary search function ShellCheck code number
 def BinaryShell(lst, x):
     ini = 0
@@ -33,30 +38,30 @@ def BinaryShell(lst, x):
         fullUrl = urlSC + x
         webbrowser.open_new(fullUrl)
     else:
-        print("\nCode number is not found")
+        print('\n', BACKGROUND_RED + WHITE + 'Code number is not found' + RESET)
         
 # Fetch ShellCheck Wiki
 url = urlopen('https://gist.github.com/nicerobot/53cee11ee0abbdc997661e65b348f375')
 bs = BeautifulSoup(url.read(), 'html.parser')
 
+# Puts all ShellCheck (SC) code numbers in a list
 patt = re.compile(r'SC[0-9]{4}')
-link_href = [ x.get("href") for x in bs.select('a[href*="SC"]') ]
+link_href = [ x.get('href') for x in bs.select('div#file-_shellcheck-md-readme ul li a[href*="SC"]') ]
 all_codesc = patt.findall(str(link_href)) 
-# print(codesc)
 
 # User input ShellCheck code number
-x = input('\nEnter with the code (SCXXXX): ')
+x = input('\nEnter with the code (SCXXXX): ').upper()
 BinaryShell(all_codesc, x)
 
 # Search with infinite loop
 while True:
-    ch = input("\nNew search? Press Y/y, if no, press ENTER: ")
-    if ch == 'Y' or ch == 'y':
-        x = input('\nEnter with the code (SCXXXX): ')
+    ch = input('\nNew search? Press Y/y, if no, press ENTER: ').upper()
+    if ch == 'Y':
+        x = input('\nEnter with the code (SCXXXX): ').upper()
         BinaryShell(all_codesc, x)
     elif ch == "":
-        print("\nBye!")
+        print('\nBye!')
         break
     else:
-        print("\nChoose the correct option")
+        print('\nChoose the correct option')
 
