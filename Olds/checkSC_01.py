@@ -72,6 +72,13 @@ BinarySearch(link_href, x)
 # https://didatica.tech/tudo-sobre-listas-em-python/
 # https://docs.python.org/pt-br/3/tutorial/inputoutput.html
 # https://docs.python.org/3/howto/urllib2.html
+# https://nanonets.com/blog/web-scraping-with-python-tutorial/
+# https://serpapi.com/blog/web-scraping-with-css-selectors-using-python/
+# https://www.w3schools.com/cssref/css_selectors.php
+# https://nowitsanurag.medium.com/regular-expression-in-python-f42483e80daa
+# https://docs.python.org/pt-br/3.7/library/re.html
+# https://www.statology.org/typeerror-expected-string-or-bytes-like-object/
+# https://www.scaler.com/topics/re-compile-in-python/
 
 # https://github.com/m14r41/PentestingEverything
 

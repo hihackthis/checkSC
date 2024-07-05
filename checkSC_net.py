@@ -4,7 +4,7 @@
 # on ShellCheck Wiki Page.
 #
 # by Diego Moicano (@hihackthis)
-# July 02st, 2024
+# July 02nd, 2024
 # version 1.0
 #
 # Run:
@@ -13,10 +13,6 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import webbrowser
-
-# Fetch ShellCheck Wiki
-url = urlopen('https://www.shellcheck.net/wiki/')
-bs = BeautifulSoup(url.read(), 'html.parser')
 
 # Binary search function ShellCheck code number
 def BinaryShell(lst, x):
@@ -37,6 +33,10 @@ def BinaryShell(lst, x):
         webbrowser.open_new(fullUrl)
     else:
         print("\nCode number is not found")
+        
+# Fetch ShellCheck Wiki
+url = urlopen('https://www.shellcheck.net/wiki/')
+bs = BeautifulSoup(url.read(), 'html.parser')
 
 # Puts all ShellCheck (SC) code numbers in a list
 link_href = [ x.get("href") for x in bs.select('a[href^="SC"]') ]

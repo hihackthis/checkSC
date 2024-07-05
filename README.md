@@ -1,5 +1,5 @@
 # checkSC
-Fast search for the code number on the [ShellCheck Wiki](https://www.shellcheck.net/wiki) page. :flashlight:
+Fast search for the code number on the **ShellCheck Wiki** pages. :flashlight:
 
 ## Usage
 ```
@@ -8,6 +8,13 @@ cd checkSC
 pip install -r requeriments.txt
 python checkSC.py
 ```
+Note, there are two checkSC.py:
+
+> checkSC_net.py, this will perform a search on the [ShellCheck Wiki](https://www.shellcheck.net/wiki) website.
+
+
+> checkSC_gist.py, this will perform a search on the [GitHub Gist Wiki](https://gist.github.com/nicerobot/53cee11ee0abbdc997661e65b348f375) website.
+
 After that, you can be your search for the code number. Remember, you must add 'SC' first and numbers after. For example: SC1000
 
 Let's see how easy is!
